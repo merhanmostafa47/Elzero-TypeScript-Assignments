@@ -7,13 +7,15 @@
 // Create Class Here
 class Player {
     constructor(name, type, level, vip) {
-        this.name = name,
-            this.type = type,
-            this.level = level,
-            this.vip = vip;
+        this.name = name;
+        this.type = type;
+        this.level = level;
+        this.vip = vip;
     }
     details() {
-        return this.vip ? `VIP ${this.name}, Type Is ${this.type} Level Is ${this.level}` : `${this.name}, Type Is ${this.type} Level Is ${this.level}`;
+        return this.vip
+            ? `VIP ${this.name}, Type Is ${this.type} Level Is ${this.level}`
+            : `${this.name}, Type Is ${this.type} Level Is ${this.level}`;
     }
 }
 // Do Not Edit The Code Below

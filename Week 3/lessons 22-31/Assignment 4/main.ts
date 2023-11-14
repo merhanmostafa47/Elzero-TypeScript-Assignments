@@ -6,20 +6,18 @@
 
 // Create Class Here
 class Player {
-  name: string
-  type: string
-  level: number | string
-  vip?: boolean
-  constructor( name:string, type:string, level:number|string, vip?:boolean) {
-    this.name = name,
-    this.type = type,
-    this.level = level,
-    this.vip = vip 
+  constructor(
+    public name: string,
+    public type: string,
+    public level: number | string,
+    public vip?: boolean
+  ) {}
+
+  details(): String {
+    return this.vip
+      ? `VIP ${this.name}, Type Is ${this.type} Level Is ${this.level}`
+      : `${this.name}, Type Is ${this.type} Level Is ${this.level}`
   }
-  
-  details():String  {
-       return this.vip ? `VIP ${this.name}, Type Is ${this.type} Level Is ${this.level}` : `${this.name}, Type Is ${this.type} Level Is ${this.level}`;
-   }
 }
 
 // Do Not Edit The Code Below
